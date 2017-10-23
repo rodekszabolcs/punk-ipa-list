@@ -1,0 +1,42 @@
+.beer-wrapper {
+  font-family: monospace;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 15px;
+  flex-wrap: wrap;
+  justify-content: center;
+  justify-items: center;
+  >header {
+    display: flex;
+    .title {
+      padding-left: 20px;
+      h2 {
+        text-transform: uppercase;
+        margin-bottom: 5px;
+      }
+    }
+  }
+  >section {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 75%;
+    ul {
+      padding-left: 20px;
+    }
+  }
+}
+
+.tag-line {
+  color: #444;
+}
+
+.lazy-image {
+  &[data-src] {
+    opacity: 0;
+  }
+  height: 100px;
+  opacity: 1;
+  transition: ease-in .5s;
+}

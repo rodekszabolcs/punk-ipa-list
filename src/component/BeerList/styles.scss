@@ -1,0 +1,14 @@
+.beer-list {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  >article {
+    &:nth-child(even) {
+      background-color: #e5e5e5;
+    }
+    &:nth-child(odd) {
+      background-color: #eee;
+    }
+  }
+}
